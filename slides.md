@@ -1,128 +1,159 @@
 ---
-title: Cursor Meetup Bangalore
+title: Jax - Cursor Meetup 广州
 info: |
-  22 May 2025 · 7 PM – 9 PM · Bengaluru, Karnataka
+  20 July 2025 · 2 PM – 6 PM · 广州
 class: bg-[#0F0F0F] text-white text-center
 mdc: true
 theme: slidev-theme-cursor
 layout: cover
 ---
-<div class="flex flex-col items-center gap-4">
-  <h2 class="text-2xl font-bold">Access the Slides</h2>
-  <img src="./assets/slides_qr.png" alt="Cursor Logo" class="mx-auto" />
-  <a href="https://sanjeed5.github.io/cursor-slidev/" class="text-lg hover:underline">https://sanjeed5.github.io/cursor-slidev/</a>
-</div>
-
 ---
 
 <GlowBackground>
-  <h1 class="text-6xl md:text-8xl font-bold tracking-tight text-white">Cursor Bangalore</h1>
+  <h1 class="text-6xl md:text-8xl font-bold tracking-tight text-white">Cursor 武装升级：MCP 应用与自建</h1>
 </GlowBackground>
 
 ---
 
-# Community Map
+# Speaker
 
-<a href="https://lu.ma/cursorcommunity/map" target="_blank">
-  <img src="./assets/map.png" alt="Community Map" class="mx-auto my-auto" />
-</a>
-
----
-
-# Welcome
-
-- **Sanjeed** – Cursor Ambassador India, AI Consultant
-- Thanks to **Lightspeed India Partners** for the venue  
-- Thanks to **Utopia** for being our community partner
+- **钱俊颖**:
+  - 社区“艺名”：Jax
+  - ShareWorks 前端架构师
+  - Web GDE
+  - 掘金优秀创作者
 
 ---
 
 # Agenda
 
-1. Welcome & Introductions  
-2. Cursor **Power Users Tips & Workflows**  
-3. Special Guest Speaker – **Eric Zakariasson** (Cursor)  
-4. Networking & Community  
+1. MCP 简介
+2. Cursor 中的 MCP
+3. MCP Server 开发
 
 ---
 
-# Speaker 1
+# MCP 简介 —— 概念
 
-- **Anurag**: _Scaling a Portfolio of Products with Cursor_
-  - Indie Founder @productlogz, @quotesmatic_ai
-  - https://x.com/ak_8085
+<h3 class="flex items-center justify-center h-full">模型上下文协议（Model Context Protocol）</h3>
 
 ---
 
-# Speaker 2
+# MCP 简介 —— 用途
 
-- **Darshill**: _Rapid Cross-Platform Refactors with Cursor Agent_
-  - Building http://Linkrunner.io
-  - Founding Team @bluelearn
-
----
-
-# Speaker 3
-
-- **Siddhant Goswami**:
-  - Built & scaled 3 products to $10M+
-  - Building @100xengineers, 2 exits (Tapchief, Scenes)
-  - https://x.com/geeksiddhant
+<h3 class="flex flex-col items-center justify-center h-full">
+  <div>按照相同的格式来构成模型上下文里的 Data、Tools</div>
+  <div>增强通用能力，减少信息壁垒</div>
+</h3>
 
 ---
 
-# Speaker 4
+# MCP 简介 —— 生态
 
-- **Sanjeed**:
-  - Topic: _How I made these slides using Cursor and Background Agent demo_
-  - Applied AI consultant & Cursor Ambassador India
-  - Created [awesome-cursor-rules-mdc](https://github.com/sanjeed5/awesome-cursor-rules-mdc) - 1400+ stars
-  - Worked with Langchain on multi-turn evals in the [openevals repo by Langchain](https://github.com/langchain-ai/openevals?tab=readme-ov-file#acknowledgements)
-  - https://x.com/sanjeed_i · sanjeed.in
+- https://glama.ai/mcp
+- https://mcp.so/
+- https://www.pulsemcp.com/
 
 ---
 
-# Speaker 5
+# MCP in Cursor —— 官方市场
 
-- **Rudrag Rudraksh Karpe**: _Setting up cursor rules_
-  - LLM Engineer at ZS Associates
-  - Google Summer of Code Contributor @ openSUSE
+<h3 class="flex flex-col items-center justify-center h-full">https://docs.cursor.com/tools/mcp</h3>
 
 ---
 
-# Special Guest Speaker from Cursor!
+# MCP in Cursor —— 使用
 
-**Eric Zakariasson**  
-
-Follow him on X for best Cursor tips! -> (<https://x.com/ericzakariasson>)
-
-_Topic: Q&A with Bangalore Cursor Community_
+<img src="./assets/mcp-in-cursor.jpeg" alt="MCP in Cursor" class="w-full" />
 
 ---
 
-# Join the Cursor India Group
+# MCP Server 开发 —— 场景
 
-<div class="flex items-center justify-center h-full">
-<img src="./assets/cursor_india.png" alt="Cursor India" class="w-96" />
+- 产品经理：”给我 CMS 新增一个表单页，录入用户信息。“
+- 后端开发：”接口文档写好了，放在接口平台上了。“
+- 你：”喵喵喵？“
+
+---
+
+# MCP Server 开发 —— 效果演示
+
+<h3 class="flex flex-col items-center justify-center h-full">Todo: screenshot.gif</h3>
+
+---
+
+# MCP Server 开发 —— 核心代码 —— 依赖库
+
+<div class="flex flex-col items-start justify-center h-full">
+  <div>import { McpServer, ResourceTemplate } from "@modelcontextprotocol/sdk/server/mcp.js";</div>
+  <div>import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";</div>
+  <div>import { z } from "zod";</div>
 </div>
 
 ---
 
-# Scan to Join
+# MCP Server 开发 —— 核心代码 —— 创建 & 注册
 
-<div class="flex items-center justify-center h-full">
-<img src="./assets/cursor_india_qr.jpeg" alt="QR Code" class="w-64" />
+<div class="flex flex-col items-start justify-center h-full">
+  <div>const server = new McpServer({
+  name: 'Torna',
+  version: '1.0.0'
+})</div>
+  <div>server.tool(
+  'torna',
+  { docId: z.string() },
+  dataFunction
+  )</div>
 </div>
-
-_Join our WhatsApp group & stay updated on all things Cursor_
 
 ---
 
-# Thank You
-Questions? Reach out to me on X!
+# MCP Server 开发 —— 核心代码 —— 获取数据
 
-- Website: <https://www.sanjeed.in>
-- Twitter: <https://x.com/sanjeed_i>
-- LinkedIn: <https://linkedin.com/in/msanjeed>
+<div class="flex flex-col items-start justify-center h-full">
+  ```const dataFunction = async ({ docId }) => {
+    const response = await fetch(
+      `https://api.torna.io/api/v1/docs/${docId}`,
+      {
+        headers: { Authorization: 'Bearer ...' }
+      }
+    )
+    const data = await response.json()
+    return {
+      content: [
+        {
+          type: 'text',
+          text: `API URL: ${data.projectName}/${data.url}`
+        },
+        {
+          type: 'text',
+          text: `API method: ${data.httpMethod}`
+        },
+        {
+          type: 'text',
+          text: `API request parameters: ${JSON.stringify(data.params)}`
+        }
+      ]
+    }
+  }`
+</div>
 
-<small>© Cursor Community</small> 
+---
+
+# MCP Server 开发 —— 核心代码 —— 连接
+
+<div class="flex flex-col items-start justify-center h-full">
+  <div>const transport = new StdioServerTransport();</div>
+  <div>server.connect(transport);</div>
+</div>
+---
+
+# MCP Server 开发 —— 安装
+
+<h3 class="flex flex-col items-center justify-center h-full">在 Cursor mcp.json 中增加配置项</h3>
+
+---
+
+<GlowBackground>
+  <h1 class="text-6xl md:text-8xl font-bold tracking-tight text-white">感谢倾听</h1>
+</GlowBackground>
