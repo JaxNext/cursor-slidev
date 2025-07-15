@@ -155,5 +155,5 @@ layout: cover
 ---
 
 <GlowBackground>
-  <h1 class="text-6xl md:text-8xl font-bold tracking-tight text-white">感谢倾听</h1>
+  <h1 class="text-6xl md:text-8xl font-bold tracking-tight text-white">感谢倾听!</h1>
 </GlowBackground>
