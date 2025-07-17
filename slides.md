@@ -18,15 +18,32 @@ layout: cover
 ---
 
 <div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">Speaker</div>
-<div class="max-w-xl mx-auto mt-20">
-  <div class="font-semibold text-white mr-10 text-right">
-    <div class="text-[36px]">钱俊颖</div>
-    <div class="text-[24px]">Jax</div>
-  </div>
-  <div class="text-left text-white/80">
-    <div class="mb-2">ShareWorks 前端架构师</div>
-    <div class="mb-2">Web GDE</div>
-    <div class="mb-2">掘金优秀创作者</div>
+<div class="flex flex-col items-center justify-center mt-16 space-y-8">
+  <div class="relative">
+    <div class="absolute -inset-4 bg-gradient-to-r from-[#40e0d0]/20 to-[#40e0d0]/10 rounded-2xl blur-xl"></div>
+    <div class="relative bg-[#171717] border border-[#252525] rounded-2xl p-8 backdrop-blur-sm">
+      <div class="text-center space-y-4">
+        <div class="space-y-2">
+          <h1 class="text-5xl font-bold text-white tracking-tight">钱俊颖</h1>
+          <h2 class="text-2xl font-medium text-[#40e0d0]">Jax</h2>
+        </div>
+        <div class="h-px bg-gradient-to-r from-transparent via-[#40e0d0]/30 to-transparent w-24 mx-auto"></div>
+        <div class="space-y-3 text-white/80">
+          <div class="flex items-center justify-center space-x-3">
+            <span class="text-xl">🏗️</span>
+            <span class="text-lg">ShareWorks 前端架构师</span>
+          </div>
+          <div class="flex items-center justify-center space-x-3">
+            <span class="text-xl">🏅</span>
+            <span class="text-lg">Web GDE</span>
+          </div>
+          <div class="flex items-center justify-center space-x-3">
+            <span class="text-xl">✍️</span>
+            <span class="text-lg">掘金优秀创作者</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -58,17 +75,17 @@ layout: cover
 
 <div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">MCP 简介 - 生态</div>
   <div class="flex flex-col items-center justify-center mt-15 mb-10">
-    <div class="text-[72px] font-semibold text-white/80">6800+</div>
+    <div class="text-[72px] font-semibold bg-gradient-to-r from-[#40e0d0] to-white bg-clip-text text-transparent">6800+</div>
     <div class="text-[24px] font-semibold text-white/50">MCP servers</div>
   </div>
   <div class="flex items-center justify-center">
-    <div class="card bg-[#171717] border border-[#252525] rounded-[4px] p-6 max-w-xl">
+    <div class="card bg-[#171717] border border-[#252525] rounded-l-[4px] p-6 max-w-xl">
       <a href="https://glama.ai/mcp" target="_blank" class="underline">Glama</a>
     </div>
-    <div class="card bg-[#171717] border border-[#252525] rounded-[4px] p-6 max-w-xl">
+    <div class="card bg-[#171717] border border-[#252525] p-6 max-w-xl">
       <a href="https://mcp.so/" target="_blank" class="underline">MCP.so</a>
     </div>
-    <div class="card bg-[#171717] border border-[#252525] rounded-[4px] p-6 max-w-xl">
+    <div class="card bg-[#171717] border border-[#252525] rounded-r-[4px] p-6 max-w-xl">
       <a href="https://www.pulsemcp.com/" target="_blank" class="underline">PulseMCP</a>
     </div>
   </div>
@@ -77,7 +94,7 @@ layout: cover
 
 <div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">MCP in Cursor - 官方市场</div>
 <h3 class="flex flex-col items-center justify-center font-semibold text-white/80"><a href="https://docs.cursor.com/tools/mcp" target="_blank" class="underline my-10">https://docs.cursor.com/tools/mcp</a></h3>
-<img src="./assets/tools.jpeg"class="w-[70%] mx-auto rounded-[4px] shadow-[0_20px_40px_rgba(0,0,0,0.5)]" />
+<img src="./assets/tools.jpeg"class="w-[70%] mx-auto rounded-[4px] shadow-[0_20px_40px_rgba(0,0,0,0.8)]" />
 
 ---
 
@@ -105,8 +122,65 @@ layout: cover
 ---
 
 <div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">MCP Server 开发 - 效果演示</div>
-<div class="rounded-[4px] border border-[#252525] bg-[#171717] p-4 max-w-2xl mx-auto flex flex-col items-center mt-10">
-  <span class="text-[#6E6E6E]">Todo: screenshot.gif</span>
+<div class="max-w-6xl mx-auto mt-10">
+  <div class="flex items-center justify-center">
+    <div class="flex flex-col items-center space-y-2">
+      <div class="flex items-center space-x-4">
+        <div class="relative">
+          <svg width="200" height="100" viewBox="0 0 200 100" class="text-white/80">
+            <path d="M20 30 Q20 20 30 20 L170 20 Q180 20 180 30 L180 65 Q180 75 170 75 L50 75 L20 60 Z" fill="currentColor" opacity="0.9"/>
+          </svg>
+          <div class="absolute inset-0 flex items-center justify-center text-sm text-black font-medium leading-tight px-8">
+            "按照接口文档的<br/>格式生成表单页"
+          </div>
+        </div>
+      </div>
+      <div class="text-5xl text-[#40e0d0] animate-pulse">+</div>
+      <div class="flex items-center space-x-4">
+        <img src="./assets/cursor-horizontal-dark-bg-app-icon-full-color@4x.png" alt="Cursor" class="w-48 object-contain" />
+      </div>
+      <div class="text-5xl text-[#40e0d0] animate-pulse">+</div>
+        <div class="flex items-center space-x-4">
+          <svg width="128" height="128" viewBox="0 0 64 64" class="text-[#40e0d0]">
+            <rect x="8" y="16" width="48" height="32" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+            <rect x="8" y="16" width="48" height="32" rx="4" fill="currentColor" fill-opacity="0.1"/>
+            <circle cx="16" cy="24" r="2" fill="currentColor"/>
+            <circle cx="24" cy="24" r="2" fill="currentColor"/>
+            <circle cx="32" cy="24" r="2" fill="currentColor"/>
+            <path d="M12 40 L52 40" stroke="currentColor" stroke-width="2"/>
+            <path d="M16 44 L48 44" stroke="currentColor" stroke-width="2"/>
+            <text x="32" y="35" text-anchor="middle" fill="currentColor" font-size="4" font-weight="600">MCP</text>
+            <rect x="40" y="20" width="12" height="3" rx="1.5" fill="currentColor" fill-opacity="0.6"/>
+            <rect x="40" y="26" width="8" height="3" rx="1.5" fill="currentColor" fill-opacity="0.4"/>
+          </svg>
+        </div>
+    </div>
+    <div class="flex flex-col items-center mx-12">
+      <div class="relative">
+        <svg width="80" height="20" viewBox="0 0 80 20" class="text-[#40e0d0]">
+          <path d="M5 10 L65 10 M60 5 L65 10 L60 15" stroke="currentColor" stroke-width="2" fill="none"/>
+        </svg>
+      </div>
+    </div>
+    <div class="flex flex-col items-center space-y-4">
+              <div class="relative">
+          <div class="w-32 h-40 rounded-lg bg-gradient-to-br from-[#40e0d0]/20 to-[#40e0d0]/10 border border-[#40e0d0]/30 p-5 shadow-lg shadow-[#40e0d0]/20">
+          <div class="space-y-2">
+            <div class="h-2 bg-[#40e0d0]/40 rounded w-full"></div>
+            <div class="h-1 bg-white/30 rounded w-3/4"></div>
+            <div class="h-1 bg-white/30 rounded w-1/2"></div>
+            <div class="h-2 bg-[#40e0d0]/40 rounded w-full"></div>
+            <div class="h-1 bg-white/30 rounded w-2/3"></div>
+            <div class="h-2 bg-[#40e0d0]/40 rounded w-full"></div>
+            <div class="h-1 bg-white/30 rounded w-4/5"></div>
+            <div class="h-3 bg-[#40e0d0]/60 rounded w-1/2 mt-3"></div>
+          </div>
+        </div>
+        <div class="absolute -inset-1 bg-gradient-to-r from-[#40e0d0]/20 to-[#40e0d0]/10 rounded-lg blur-md -z-10 animate-pulse"></div>
+      </div>
+      <div class="text-white/60 text-sm">✨ CMS Form</div>
+    </div>
+  </div>
 </div>
 
 ---
@@ -161,10 +235,12 @@ layout: cover
 ---
 
 <GlowBackground>
-  <div class="flex flex-col items-center justify-center h-full">
-    <h1 class="text-6xl md:text-8xl font-extrabold tracking-tight text-white">感谢倾听!</h1>
-    <h2 class="text-6xl md:text-8xl font-extrabold tracking-tight text-white">欢迎交流</h2>
-    <img src="./assets/wechat.png" alt="QR Code" class="w-[200px] mx-auto mt-10 rounded-[4px] shadow-[0_20px_40px_rgba(0,0,0,0.5)]" />
+  <div class="flex items-center justify-center h-full">
+    <div class="mr-10">
+      <h1 class="text-6xl md:text-8xl font-extrabold tracking-tight text-white mb-14">感谢倾听</h1>
+      <h1 class="text-6xl md:text-8xl font-extrabold tracking-tight text-white">欢迎交流</h1>
+    </div>
+    <img src="./assets/wechat.png" alt="QR Code" class="w-32 mx-auto rounded-[4px] shadow-[0_20px_40px_rgba(0,0,0,0.5)]" />
   </div>
 
 </GlowBackground>
