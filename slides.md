@@ -10,8 +10,9 @@ layout: cover
 
 <GlowBackground>
   <div class="flex flex-col items-center justify-center h-full">
-    <h1 class="tracking-tight text-white">Cursor 武装升级</h1>
-    <h2 class="tracking-tight text-white">MCP 应用 & 自建</h2>
+                <h1 class="tracking-tight text-white" style="text-shadow: 0 4px 0 rgba(0,0,0,0.3), 0 8px 8px rgba(0,0,0,0.2); transform: perspective(800px) rotateX(8deg) translateZ(0); margin-bottom: 0px;">Cursor 🚀 武装升级</h1>
+      <div class="h-px bg-gradient-to-r from-transparent via-[#40e0d0]/40 to-transparent w-32 mx-auto my-6"></div>
+      <h2 class="tracking-tight text-white" style=""><span class="bg-gradient-to-r from-[#00ffff] via-[#00bfff] to-[#00ff99] bg-clip-text text-transparent font-extrabold animate-pulse">MCP</span> <span class="font-light">应用 & 自建</span></h2>
   </div>
 </GlowBackground>
 
@@ -22,24 +23,24 @@ layout: cover
   <div class="relative">
     <div class="absolute -inset-4 bg-gradient-to-r from-[#40e0d0]/20 to-[#40e0d0]/10 rounded-2xl blur-xl"></div>
     <div class="relative bg-[#171717] border border-[#252525] rounded-2xl p-8 backdrop-blur-sm">
-      <div class="text-center space-y-4">
-        <div class="space-y-2">
+      <div class="text-center space-y-4 flex items-center">
+        <div class="space-y-2 text-right">
           <h1 class="text-5xl font-bold text-white tracking-tight">钱俊颖</h1>
           <h2 class="text-2xl font-medium text-[#40e0d0]">Jax</h2>
         </div>
-        <div class="h-px bg-gradient-to-r from-transparent via-[#40e0d0]/30 to-transparent w-24 mx-auto"></div>
-        <div class="space-y-3 text-white/80">
-          <div class="flex items-center justify-center space-x-3">
-            <span class="text-xl">🏗️</span>
-            <span class="text-lg">ShareWorks 前端架构师</span>
+                 <div class="w-px bg-gradient-to-b from-transparent via-[#40e0d0]/30 to-transparent h-36 mx-10"></div>
+        <div class="text-white/80">
+          <div class="flex items-center justify-start text-2xl">
+            <span class="">🏗️</span>
+            <span class="">ShareWorks 前端架构师</span>
           </div>
-          <div class="flex items-center justify-center space-x-3">
-            <span class="text-xl">🏅</span>
-            <span class="text-lg">Web GDE</span>
+          <div class="flex items-center justify-start text-2xl my-10">
+            <span class="">🏅</span>
+            <span class="">Web GDE</span>
           </div>
-          <div class="flex items-center justify-center space-x-3">
-            <span class="text-xl">✍️</span>
-            <span class="text-lg">掘金优秀创作者</span>
+          <div class="flex items-center justify-start text-2xl">
+            <span class="">✍️</span>
+            <span class="">掘金优秀创作者</span>
           </div>
         </div>
       </div>
@@ -50,11 +51,11 @@ layout: cover
 ---
 
 <div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">Agenda</div>
-<div class="card bg-[#171717] border border-[#252525] rounded-[4px] p-6 max-w-xl mx-auto mt-10">
-  <ol class="text-left text-white/80 list-decimal list-inside">
-    <li>MCP 简介</li>
-    <li>Cursor 中的 MCP</li>
-    <li>MCP Server 开发</li>
+<div class="p-6 max-w-xl mx-auto mt-10">
+  <ol class="text-left text-white/80 list-decimal list-inside text-3xl font-semibold">
+    <li class="mb-2">MCP 简介</li>
+    <li class="mb-2">Cursor 中的 MCP</li>
+    <li class="mb-2">MCP Server 开发</li>
   </ol>
 </div>
 
@@ -121,7 +122,7 @@ layout: cover
 
 ---
 
-<div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">MCP Server 开发 - 效果演示</div>
+<div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">MCP Server 开发 - 效果</div>
 <div class="max-w-6xl mx-auto mt-10">
   <div class="flex items-center justify-center">
     <div class="flex flex-col items-center space-y-2">
@@ -135,11 +136,11 @@ layout: cover
           </div>
         </div>
       </div>
-      <div class="text-5xl text-[#40e0d0] animate-pulse">+</div>
+      <div class="text-4xl text-[#40e0d0] animate-pulse">+</div>
       <div class="flex items-center space-x-4">
-        <img src="./assets/cursor-horizontal-dark-bg-app-icon-full-color@4x.png" alt="Cursor" class="w-48 object-contain" />
+        <img src="./assets/cursor-horizontal-dark-bg-app-icon-full-color@4x.png" alt="Cursor" class="w-72 object-contain" />
       </div>
-      <div class="text-5xl text-[#40e0d0] animate-pulse">+</div>
+      <div class="text-4xl text-[#40e0d0] animate-pulse">+</div>
         <div class="flex items-center space-x-4">
           <svg width="128" height="128" viewBox="0 0 64 64" class="text-[#40e0d0]">
             <rect x="8" y="16" width="48" height="32" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
@@ -188,6 +189,13 @@ layout: cover
 <div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">MCP Server 开发 - 核心代码</div>
 <div class="mt-10">
 
+<style>
+.slidev-layout pre {
+  font-size: 0.96rem !important;
+  line-height: 1.4 !important;
+}
+</style>
+
   ```js
   import { McpServer, ResourceTemplate } from "@modelcontextprotocol/sdk/server/mcp.js";
   import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
@@ -214,7 +222,18 @@ layout: cover
 ---
 
 <div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">MCP Server 开发 - 安装</div>
-<div class="mt-10">
+<div class="flex items-center justify-center mt-14">
+  <div>
+    <img src="./assets/new-mcp.jpeg" alt="MCP Server Install" class="w-[70%] mx-auto rounded-[4px] shadow-[0_20px_40px_rgba(0,0,0,0.5)]" />
+  </div>
+<div class="">
+
+<style>
+.slidev-layout pre {
+  font-size: 1.2rem !important;
+  line-height: 1.6 !important;
+}
+</style>
 
   ```json
   {
@@ -231,15 +250,17 @@ layout: cover
   ```
 
 </div>
+</div>
 
 ---
 
 <GlowBackground>
   <div class="flex items-center justify-center h-full">
-    <div class="mr-10">
+    <div class="">
       <h1 class="text-6xl md:text-8xl font-extrabold tracking-tight text-white mb-14">感谢倾听</h1>
       <h1 class="text-6xl md:text-8xl font-extrabold tracking-tight text-white">欢迎交流</h1>
     </div>
+    <div class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mx-10">💬</div>
     <img src="./assets/wechat.png" alt="QR Code" class="w-32 mx-auto rounded-[4px] shadow-[0_20px_40px_rgba(0,0,0,0.5)]" />
   </div>
 
