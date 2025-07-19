@@ -107,16 +107,30 @@ layout: cover
 <div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">MCP Server 开发 - 场景</div>
 <div class="card bg-[#171717] border border-[#252525] rounded-[4px] p-6 max-w-xl mx-auto mt-10 flex flex-col space-y-4">
   <div class="self-start max-w-[75%] bg-[#252525]/50 rounded-lg p-3">
-    <div class="text-xs text-white/60 mb-1">产品经理</div>
-    <p class="text-white/80">”给我 CMS 新增一个表单页，录入用户信息。“</p>
+    <div class="text-xs text-[#40e0d0] mb-1">产品经理</div>
+    <p class="text-white/80">”在 CMS 里做个表单页，用来录入用户信息。“</p>
   </div>
   <div class="self-start max-w-[75%] bg-[#252525]/50 rounded-lg p-3">
-    <div class="text-xs text-white/60 mb-1">后端开发</div>
+    <div class="text-xs text-[#40e0d0] mb-1">后端开发</div>
     <p class="text-white/80">”接口文档写好了，放在接口平台上了。“</p>
   </div>
-  <div class="self-end max-w-[75%] bg-[#40e0d0]/20 rounded-lg p-3">
-    <div class="text-xs text-white/60 mb-1 text-right">你</div>
-    <p class="text-white/80 text-right">”喵喵喵？“</p>
+
+  <div class="mt-4 bg-[#1a1a1a] border-t border-[#333] p-4">
+    <div class="flex items-center space-x-3 max-w-[100%] ml-auto">
+      <div class="flex-1 relative">
+        <input type="text" 
+               value="我只想早点下班。。。" 
+               class="w-full bg-[#2d2d2d] border border-[#404040] rounded-full px-4 py-3 text-white/90 text-sm outline-none focus:border-[#40e0d0]/50 focus:ring-1 focus:ring-[#40e0d0]/30" 
+               placeholder="输入消息..." 
+               readonly />
+        <div class="absolute left-40 top-1/2 transform -translate-y-1/2 w-px h-4 bg-white/60 animate-pulse"></div>
+      </div>
+      <button class="bg-[#40e0d0] hover:bg-[#40e0d0]/80 rounded-full p-3 transition-colors duration-200 flex items-center justify-center">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" class="text-black">
+          <path d="M2 21L23 12L2 3V10L17 12L2 14V21Z" fill="currentColor"/>
+        </svg>
+      </button>
+    </div>
   </div>
 </div>
 
@@ -125,7 +139,7 @@ layout: cover
 <div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">MCP Server 开发 - 效果</div>
 <div class="max-w-6xl mx-auto mt-10">
   <div class="flex items-center justify-center">
-    <div class="flex flex-col items-center space-y-2">
+    <div class="flex flex-col items-center">
       <div class="flex items-center space-x-4">
         <div class="relative">
           <svg width="200" height="100" viewBox="0 0 200 100" class="text-white/80">
@@ -292,13 +306,15 @@ layout: cover
 ---
 
 <GlowBackground>
-  <div class="flex items-center justify-center h-full">
-    <div class="">
-      <h1 class="text-6xl md:text-8xl font-extrabold tracking-tight text-white mb-14">感谢倾听</h1>
-      <h1 class="text-6xl md:text-8xl font-extrabold tracking-tight text-white">欢迎交流</h1>
+  <div class="flex flex-col items-center justify-center w-full h-full relative">
+    <h1 class="tracking-tight text-white" style="text-shadow: 0 4px 0 rgba(0,0,0,0.3), 0 8px 8px rgba(0,0,0,0.2); transform: perspective(800px) rotateX(8deg) translateZ(0); margin-bottom: 0px;">Cursor × MCP = 提前下班</h1>
+    <div class="flex items-center absolute right-10 bottom-10">
+      <div class="mr-4">
+        <h3 class="text-4xl md:text-8xl font-light tracking-tight text-white/80 mb-2">感谢倾听</h3>
+        <h3 class="text-4xl md:text-8xl font-light tracking-tight text-white/80">欢迎交流</h3>
+      </div>
+      <img src="./assets/wechat.png" alt="QR Code" class="w-24 mx-auto rounded-[4px] shadow-[0_20px_40px_rgba(0,0,0,0.5)]" />
     </div>
-    <div class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mx-10">💬</div>
-    <img src="./assets/wechat.png" alt="QR Code" class="w-32 mx-auto rounded-[4px] shadow-[0_20px_40px_rgba(0,0,0,0.5)]" />
   </div>
 
 </GlowBackground>
