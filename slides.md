@@ -197,24 +197,59 @@ layout: cover
 </style>
 
   ```js
-  import { McpServer, ResourceTemplate } from "@modelcontextprotocol/sdk/server/mcp.js";
+  // mcp-servers/api-doc.js
+  import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
   import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
   import { z } from "zod";
+  import { fetchDataFunc } from './fetchData.js'
 
   const server = new McpServer({
-    name: 'Torna',
+    name: 'ApiDoc',
     version: '1.0.0'
   })
-  server.tool(
-    'torna',
-    { docId: z.string() },
-    function () {
-      // 获取 & 组装数据……
-    }
+
+  server.registerTool('api_doc',
+    { inputSchema: {
+        docId: z.string().describe('API document ID, uses "docId" as the key')
+    }},
+    fetchDataFunc
   )
 
-  const transport = new StdioServerTransport();
-  server.connect(transport);
+  const transport = new StdioServerTransport()
+  await server.connect(transport)
+  ```
+
+</div>
+
+---
+
+<div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">MCP Server 开发 - 核心代码</div>
+<div class="mt-10">
+
+<style>
+.slidev-layout pre {
+  font-size: 0.96rem !important;
+  line-height: 1.4 !important;
+}
+</style>
+
+  ```js
+  // fetchData.js
+  export async function fetchDataFunc ({ docId }) {
+      const response = await fetch(
+        `https://example.com/api/endpoints/${docId}`,
+      )
+      const data = await response.json()
+      const { method, path, properties } = data || {}
+      return {
+        content: [
+          { type: 'text', text: `API name: ${docId}` },
+          { type: 'text', text: `API URL: ${path}` },
+          { type: 'text', text: `API method: ${method}` },
+          { type: 'text', text: `API request parameters: ${JSON.stringify(properties)}` }
+        ]
+      }
+  }
   ```
 
 </div>
@@ -223,9 +258,10 @@ layout: cover
 
 <div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">MCP Server 开发 - 安装</div>
 <div class="flex items-center justify-center mt-14">
-  <div>
-    <img src="./assets/new-mcp.jpeg" alt="MCP Server Install" class="w-[70%] mx-auto rounded-[4px] shadow-[0_20px_40px_rgba(0,0,0,0.5)]" />
+  <div class="flex justify-end">
+    <img src="./assets/new-mcp.jpeg" alt="MCP Server Install" class="w-[80%] rounded-[4px] shadow-[0_20px_40px_rgba(0,0,0,0.5)]" />
   </div>
+  <div class="text-2xl text-[#40e0d0] animate-pulse mx-5">➡️</div>
 <div class="">
 
 <style>
@@ -236,14 +272,15 @@ layout: cover
 </style>
 
   ```json
+  // ~/.cursor/mcp.json
   {
+    // other configs ...
     "mcpServers": {
-      ...
-      "Torna": {
+      "ApiDoc": {
         "command": "node",
         "args": [
-          "Torna.js"
-        ]
+          "/path/to/mcp-servers/api-doc.js"
+        ],
       }
     }
   }
