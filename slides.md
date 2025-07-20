@@ -31,15 +31,15 @@ layout: cover
                  <div class="w-px bg-gradient-to-b from-transparent via-[#40e0d0]/30 to-transparent h-36 mx-10"></div>
         <div class="text-white/80">
           <div class="flex items-center justify-start text-2xl">
-            <span class="">🏗️</span>
+            <span class="mr-2">🏗️</span>
             <span class="">ShareWorks 前端架构师</span>
           </div>
-          <div class="flex items-center justify-start text-2xl my-10">
-            <span class="">🏅</span>
+          <div class="flex items-center justify-start text-2xl my-6">
+            <span class="mr-2">🏅</span>
             <span class="">Web GDE</span>
           </div>
           <div class="flex items-center justify-start text-2xl">
-            <span class="">✍️</span>
+            <span class="mr-2">✍️</span>
             <span class="">掘金优秀创作者</span>
           </div>
         </div>
@@ -64,8 +64,8 @@ layout: cover
 <div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">MCP 简介 - 概念</div>
 <h1 class="flex items-center justify-center font-semibold text-white/80 mt-35">模型<span class="text-[#40e0d0]">上下文</span>协议</h1>
 <h3 class="flex items-center justify-center font-semibold text-white/80 mt-2 mb-5">Model Context Protocol</h3>
-<div class="flex items-center justify-center font-semibold text-white/50 mt-2">约定统一的格式，来构成模型上下文里的 Data、Tools</div>
-<div class="flex items-center justify-center font-semibold text-white/50 mt-2">增强通用能力，减少信息壁垒</div>
+<div class="flex items-center justify-center font-semibold text-white/50 mt-2">用统一的格式</div>
+<div class="flex items-center justify-center font-semibold text-white/50 mt-2">构成更高效、更准确的上下文</div>
 
 ---
 
