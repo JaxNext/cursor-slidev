@@ -70,7 +70,8 @@ layout: cover
 ---
 
 <div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">MCP 简介 - 用途</div>
-<img src="./assets/architecture.jpeg" alt="MCP usage" class="w-[70%] mx-auto mt-10 rounded-[4px] shadow-[0_20px_40px_rgba(0,0,0,0.5)]" />
+<img src="./assets/architecture.jpeg" alt="MCP usage" class="w-[60%] mx-auto mt-10 rounded-[4px] shadow-[0_20px_40px_rgba(0,0,0,0.5)]" />
+<div class="flex items-center justify-center font-semibold text-white/50 mt-4 text-[14px]">图片来源：<a href="https://modelcontextprotocol.io/introduction" target="_blank" class="underline text-white/50">https://modelcontextprotocol.io/introduction</a></div>
 
 ---
 
@@ -95,12 +96,29 @@ layout: cover
 
 <div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">MCP in Cursor - 官方市场</div>
 <h3 class="flex flex-col items-center justify-center font-semibold text-white/80"><a href="https://docs.cursor.com/tools/mcp" target="_blank" class="underline my-10">https://docs.cursor.com/tools/mcp</a></h3>
-<img src="./assets/tools.jpeg"class="w-[70%] mx-auto rounded-[4px] shadow-[0_20px_40px_rgba(0,0,0,0.8)]" />
+<img src="./assets/cursor-tools.gif"class="w-[60%] mx-auto rounded-[4px] shadow-[0_20px_40px_rgba(0,0,0,0.8)]" />
+
+---
+
+<div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">MCP in Cursor - 一键安装</div>
+<img src="./assets/mcp-install.gif"class="w-[70%] mx-auto mt-10 rounded-[4px] shadow-[0_20px_40px_rgba(0,0,0,0.8)]" />
+<div class="flex items-center justify-center font-semibold text-white/50 mt-4 text-[14px]">从<a href="https://docs.cursor.com/tools/mcp" target="_blank" class="underline text-white/50">官方工具市场</a>一键装入 Cursor</div>
+
+---
+
+<div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">MCP in Cursor - 手动维护</div>
+  <img src="./assets/mcp-in-cursor.jpeg" alt="MCP in Cursor" class="w-[70%] mx-auto mt-10 rounded-[4px] shadow-[0_20px_40px_rgba(0,0,0,0.5)]" />
+
+---
+
+<div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">MCP in Cursor - 手动维护</div>
+  <img src="./assets/mcp-json-config.gif" alt="MCP in Cursor" class="w-[70%] mx-auto mt-10 rounded-[4px] shadow-[0_20px_40px_rgba(0,0,0,0.5)]" />
 
 ---
 
 <div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">MCP in Cursor - 使用</div>
-  <img src="./assets/mcp-in-cursor.jpeg" alt="MCP in Cursor" class="w-[70%] mx-auto mt-10 rounded-[4px] shadow-[0_20px_40px_rgba(0,0,0,0.5)]" />
+  <img src="./assets/hf-show.gif" alt="MCP in Cursor" class="w-[60%] mx-auto mt-10 rounded-[4px] shadow-[0_20px_40px_rgba(0,0,0,0.5)]" />
+<div class="flex items-center justify-center font-semibold text-white/50 mt-4 text-[14px]">自动匹配合适的 MCP tool</div>
 
 ---
 
@@ -130,6 +148,177 @@ layout: cover
           <path d="M2 21L23 12L2 3V10L17 12L2 14V21Z" fill="currentColor"/>
         </svg>
       </button>
+    </div>
+  </div>
+</div>
+
+---
+
+<div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">MCP Server 开发 - 场景</div>
+<img src="./assets/form.jpeg"class="w-[40%] mx-auto mt-10 rounded-[4px] shadow-[0_20px_40px_rgba(0,0,0,0.8)]" />
+<div class="flex items-center justify-center font-semibold text-white/50 mt-4 text-[14px]">产品经理想要的管理后台表单页</div>
+
+---
+
+<div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">MCP Server 开发 - 场景</div>
+<div class="flex items-center justify-center gap-10 mt-20">
+  <div class="flex flex-col items-center justify-center flex-1">
+    <img src="./assets/doc-platform.jpeg"class="w-[80%] mt-10 rounded-[4px] shadow-[0_20px_40px_rgba(0,0,0,0.8)]" />
+    <div class="flex items-center justify-center font-semibold text-white/50 mt-4 text-[14px]">接口文档平台长这样</div>
+  </div>
+  <div class="flex flex-col items-center justify-center flex-1">
+    <img src="./assets/doc-data.jpeg"class="w-[98%] mt-10 rounded-[4px] shadow-[0_20px_40px_rgba(0,0,0,0.8)]" />
+    <div class="flex items-center justify-center font-semibold text-white/50 mt-4 text-[14px]">文档数据来自 HTTP 请求</div>
+  </div>
+</div>
+
+---
+
+<div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">MCP Server 开发 - 原始模式</div>
+<div class="max-w-6xl mx-auto mt-24">
+  <div class="flex items-center justify-center space-x-8">
+    <!-- Step 1: Create Routes & APIs -->
+    <div class="relative w-[25%]">
+      <div class="bg-gradient-to-br from-slate-700/50 to-slate-800/50 border border-slate-600/30 rounded-lg p-6 backdrop-blur-sm">
+        <div class="flex items-center justify-center w-12 h-12 bg-red-500/20 rounded-full border border-red-500/30 mb-4 mx-auto">
+          <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+          </svg>
+        </div>
+        <h5 class="text-white font-semibold text-center mb-2 text-white/60">新建页面路由<br/>& API 方法</h5>
+      </div>
+      <div class="absolute -right-7 top-1/2 transform -translate-y-1/2 text-[#40e0d0] text-2xl z-10">→</div>
+    </div>
+    <!-- Step 2: Build Components -->
+    <div class="relative w-[25%]">
+      <div class="bg-gradient-to-br from-slate-700/50 to-slate-800/50 border border-slate-600/30 rounded-lg p-6 backdrop-blur-sm">
+        <div class="flex items-center justify-center w-12 h-12 bg-orange-500/20 rounded-full border border-orange-500/30 mb-4 mx-auto">
+          <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+          </svg>
+        </div>
+        <h5 class="text-white font-semibold text-center mb-2 text-white/60">逐个堆叠<br />表单组件</h5>
+      </div>
+      <div class="absolute -right-7 top-1/2 transform -translate-y-1/2 text-[#40e0d0] text-2xl z-10">→</div>
+    </div>
+    <!-- Step 3: Data Alignment -->
+    <div class="flex-1 relative w-[25%]">
+      <div class="bg-gradient-to-br from-slate-700/50 to-slate-800/50 border border-slate-600/30 rounded-lg p-6 backdrop-blur-sm">
+        <div class="flex items-center justify-center w-12 h-12 bg-yellow-500/20 rounded-full border border-yellow-500/30 mb-4 mx-auto">
+          <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+          </svg>
+        </div>
+        <h5 class="text-white font-semibold text-center mb-2 text-white/60">匹配数据格式<br />与 API 文档</h5>
+      </div>
+      <div class="absolute -right-7 top-1/2 transform -translate-y-1/2 text-[#40e0d0] text-2xl z-10">→</div>
+    </div>
+    <!-- Step 4: Integration Testing -->
+    <div class="flex-1 w-[25%]">
+      <div class="bg-gradient-to-br from-slate-700/50 to-slate-800/50 border border-slate-600/30 rounded-lg p-6 backdrop-blur-sm">
+        <div class="flex items-center justify-center w-12 h-12 bg-blue-500/20 rounded-full border border-blue-500/30 mb-4 mx-auto">
+          <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/>
+          </svg>
+        </div>
+        <h5 class="text-white font-semibold text-center mb-2 text-white/60">前后端<br />联调</h5>
+      </div>
+    </div>
+  </div>
+  <!-- Timeline indicator -->
+  <div class="flex justify-center mt-12">
+    <div class="flex items-center space-x-2 bg-slate-800/50 rounded-full px-6 py-3 border border-slate-600/30">
+      <div class="w-2 h-2 bg-red-400 rounded-full animate-pulse"></div>
+      <h3 class="">下班时间：21:00</h3>
+      <div class="w-2 h-2 bg-red-400 rounded-full animate-pulse"></div>
+    </div>
+  </div>
+</div>
+
+---
+
+<div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">MCP Server 开发 - Cursor 模式（无 MCP）</div>
+<div class="max-w-6xl mx-auto mt-24">
+  <div class="flex items-center justify-center space-x-8">
+    <div class="relative w-[25%]">
+      <div class="bg-gradient-to-br from-slate-700/50 to-slate-800/50 border border-slate-600/30 rounded-lg p-6 backdrop-blur-sm">
+        <div class="flex items-center justify-center w-12 h-12 bg-red-500/20 rounded-full border border-red-500/30 mb-4 mx-auto">
+          <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+          </svg>
+        </div>
+        <h5 class="text-white font-semibold text-center mb-2 text-white/60">手动复制<br />接口文档内容</h5>
+      </div>
+      <div class="absolute -right-7 top-1/2 transform -translate-y-1/2 text-[#40e0d0] text-2xl z-10">→</div>
+    </div>
+    <!-- Step 2: Build Components -->
+    <div class="relative w-[25%]">
+      <div class="bg-gradient-to-br from-slate-700/50 to-slate-800/50 border border-slate-600/30 rounded-lg p-6 backdrop-blur-sm">
+        <div class="flex items-center justify-center w-12 h-12 bg-orange-500/20 rounded-full border border-orange-500/30 mb-4 mx-auto">
+          <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+          </svg>
+        </div>
+        <h5 class="text-white font-semibold text-center mb-2 text-white/60">组织上下文<br />调优提示词<br /></h5>
+      </div>
+      <div class="absolute -right-7 top-1/2 transform -translate-y-1/2 text-[#40e0d0] text-2xl z-10">→</div>
+    </div>
+    <!-- Step 3: Data Alignment -->
+    <div class="relative w-[25%]">
+      <div class="bg-gradient-to-br from-slate-700/50 to-slate-800/50 border border-slate-600/30 rounded-lg p-6 backdrop-blur-sm">
+        <div class="flex items-center justify-center w-12 h-12 bg-yellow-500/20 rounded-full border border-yellow-500/30 mb-4 mx-auto">
+          <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+          </svg>
+        </div>
+        <h5 class="text-white font-semibold text-center mb-2 text-white/60">生成表单页<br />代码</h5>
+      </div>
+    </div>
+  </div>
+  <!-- Timeline indicator -->
+  <div class="flex justify-center mt-12">
+    <div class="flex items-center space-x-2 bg-slate-800/50 rounded-full px-6 py-3 border border-slate-600/30">
+      <div class="w-2 h-2 bg-orange-400 rounded-full animate-pulse"></div>
+      <h3 class="">下班时间：19:00</h3>
+      <div class="w-2 h-2 bg-orange-400 rounded-full animate-pulse"></div>
+    </div>
+  </div>
+</div>
+
+---
+
+<div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">MCP Server 开发 - Cursor × MCP</div>
+<div class="max-w-6xl mx-auto mt-24">
+  <div class="flex items-center justify-center space-x-8">
+    <div class="relative w-[25%]">
+      <div class="bg-gradient-to-br from-slate-700/50 to-slate-800/50 border border-slate-600/30 rounded-lg p-6 backdrop-blur-sm">
+        <div class="flex items-center justify-center w-12 h-12 bg-red-500/20 rounded-full border border-red-500/30 mb-4 mx-auto">
+          <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+          </svg>
+        </div>
+        <h5 class="text-white font-semibold text-center mb-2 text-white/60">极简提示词<br />自动调用 MCP 工具</h5>
+      </div>
+      <div class="absolute -right-7 top-1/2 transform -translate-y-1/2 text-[#40e0d0] text-2xl z-10">→</div>
+    </div>
+    <!-- Step 3: Data Alignment -->
+    <div class="relative w-[25%]">
+      <div class="bg-gradient-to-br from-slate-700/50 to-slate-800/50 border border-slate-600/30 rounded-lg p-6 backdrop-blur-sm">
+        <div class="flex items-center justify-center w-12 h-12 bg-yellow-500/20 rounded-full border border-yellow-500/30 mb-4 mx-auto">
+          <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+          </svg>
+        </div>
+        <h5 class="text-white font-semibold text-center mb-2 text-white/60">生成表单页<br />代码</h5>
+      </div>
+    </div>
+  </div>
+  <!-- Timeline indicator -->
+  <div class="flex justify-center mt-12">
+    <div class="flex items-center space-x-2 bg-slate-800/50 rounded-full px-6 py-3 border border-slate-600/30">
+      <div class="w-2 h-2 bg-orange-400 rounded-full animate-pulse"></div>
+      <h3 class="">下班时间：17:00</h3>
+      <div class="w-2 h-2 bg-orange-400 rounded-full animate-pulse"></div>
     </div>
   </div>
 </div>
@@ -200,12 +389,24 @@ layout: cover
 
 ---
 
+<div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">MCP in Cursor - 效果</div>
+  <img src="./assets/demo1.gif" alt="MCP in Cursor" class="w-[50%] mx-auto mt-10 rounded-[4px] shadow-[0_20px_40px_rgba(0,0,0,0.5)]" />
+<div class="flex items-center justify-center font-semibold text-white/50 mt-4 text-[14px]">只需在提示词中包含接口文档 ID，</div><div class="flex items-center justify-center font-semibold text-white/50 mt-1 text-[14px]">参数解析、数据拉取和上下文构成将全自动执行</div>
+
+---
+
+<div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">MCP in Cursor - 效果</div>
+  <img src="./assets/demo2.gif" alt="MCP in Cursor" class="w-[70%] mx-auto mt-10 rounded-[4px] shadow-[0_20px_40px_rgba(0,0,0,0.5)]" />
+<div class="flex items-center justify-center font-semibold text-white/50 mt-4 text-[14px]">谈笑间，完成表单页开发</div>
+
+---
+
 <div class="overline text-[14px] font-medium tracking-wider uppercase text-white/80 mb-2">MCP Server 开发 - 核心代码</div>
 <div class="mt-10">
 
 <style>
 .slidev-layout pre {
-  font-size: 0.96rem !important;
+  font-size: 0.84rem !important;
   line-height: 1.4 !important;
 }
 </style>
@@ -233,6 +434,7 @@ layout: cover
   await server.connect(transport)
   ```
 
+<div class="flex items-center justify-center font-semibold text-white/50 mt-4 text-[12px]">完整代码见：<a href="https://github.com/JaxNext/api-doc-mcp-server" class="text-[#40e0d0]/50">https://github.com/JaxNext/api-doc-mcp-server</a></div>
 </div>
 
 ---
@@ -266,6 +468,7 @@ layout: cover
   }
   ```
 
+<div class="flex items-center justify-center font-semibold text-white/50 mt-4 text-[12px]">完整代码见：<a href="https://github.com/JaxNext/api-doc-mcp-server" class="text-[#40e0d0]/50">https://github.com/JaxNext/api-doc-mcp-server</a></div>
 </div>
 
 ---
